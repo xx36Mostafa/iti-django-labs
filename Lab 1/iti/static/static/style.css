@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    font-family: system-ui, Arial, sans-serif;
+    background: #f6f7fb;
+    color: #222;
+}
+
+.container {
+    max-width: 720px;
+    margin: 48px auto;
+    padding: 24px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    margin-bottom: 8px;
+}
+
+.bio {
+    color: #555;
+}
+
+.skills {
+    padding-left: 18px;
+}
+
+.skills li {
+    margin: 6px 0;
+}
+
+#helloBtn {
+    margin-top: 16px;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #4f46e5;
+    color: white;
+    font-weight: 600;
+}
+
+#helloBtn:hover {
+    opacity: 0.9;
+}

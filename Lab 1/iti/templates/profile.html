@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Profile</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    <div class="container">
+        <h1>{{ name }}</h1>
+        <p class="bio">{{ bio }}</p>
+
+        <h2>Skills</h2>
+        <ul class="skills">
+            {% for skill in skills %}
+            <li>{{ skill }}</li>
+            {% empty %}
+            <li>No skills added yet.</li>
+            {% endfor %}
+        </ul>
+
+        <button id="helloBtn">Say Hello</button>
+    </div>
+
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+
+</html>
